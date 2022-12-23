@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indice.IdentityServer4.EntityFramework.Storage", "src\Indice.IdentityServer4.EntityFramework.Storage\Indice.IdentityServer4.EntityFramework.Storage.csproj", "{B34A549A-5858-4EF5-BDF0-8384EAF12949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7CD85A93-3BCE-4CA9-9D29-EB0D14C70521}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1718DFF-005A-4793-8E41-DA2AE6369BA5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indice.IdentityServer4", "src\Indice.IdentityServer4\Indice.IdentityServer4.csproj", "{1504864A-EDEB-4586-8CFF-00A95239E8ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B34A549A-5858-4EF5-BDF0-8384EAF12949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34A549A-5858-4EF5-BDF0-8384EAF12949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34A549A-5858-4EF5-BDF0-8384EAF12949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34A549A-5858-4EF5-BDF0-8384EAF12949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1504864A-EDEB-4586-8CFF-00A95239E8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1504864A-EDEB-4586-8CFF-00A95239E8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1504864A-EDEB-4586-8CFF-00A95239E8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1504864A-EDEB-4586-8CFF-00A95239E8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B34A549A-5858-4EF5-BDF0-8384EAF12949} = {7CD85A93-3BCE-4CA9-9D29-EB0D14C70521}
+		{1504864A-EDEB-4586-8CFF-00A95239E8ED} = {7CD85A93-3BCE-4CA9-9D29-EB0D14C70521}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03285325-7943-47F2-B7E9-E4482943C464}
+	EndGlobalSection
+EndGlobal
