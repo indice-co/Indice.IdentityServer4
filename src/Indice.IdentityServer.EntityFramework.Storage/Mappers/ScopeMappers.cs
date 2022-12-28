@@ -6,15 +6,15 @@ using AutoMapper;
 using IS4Models = IdentityServer4.Models;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Mappers
+namespace Indice.IdentityServer.EntityFramework.Storage.Mappers
 {
     /// <summary>
-    /// Extension methods to map to/from entity/model for clients.
+    /// Extension methods to map to/from entity/model for scopes.
     /// </summary>
-    public static class ClientMappers
+    public static class ScopeMappers
     {
-        static ClientMappers() {
-            Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ClientMapperProfile>())
+        static ScopeMappers() {
+            Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ScopeMapperProfile>())
                 .CreateMapper();
         }
 
@@ -25,8 +25,8 @@ namespace Indice.IdentityServer4.EntityFramework.Storage.Mappers
         /// </summary>
         /// <param name="entity">The entity.</param>
         /// <returns></returns>
-        public static IS4Models.Client ToModel(this IS4Entities.Client entity) {
-            return Mapper.Map<IS4Models.Client>(entity);
+        public static IS4Models.ApiScope ToModel(this IS4Entities.ApiScope entity) {
+            return entity == null ? null : Mapper.Map<IS4Models.ApiScope>(entity);
         }
 
         /// <summary>
@@ -34,8 +34,8 @@ namespace Indice.IdentityServer4.EntityFramework.Storage.Mappers
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns></returns>
-        public static IS4Entities.Client ToEntity(this IS4Models.Client model) {
-            return Mapper.Map<IS4Entities.Client>(model);
+        public static IS4Entities.ApiScope ToEntity(this IS4Models.ApiScope model) {
+            return model == null ? null : Mapper.Map<IS4Entities.ApiScope>(model);
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Mappers
+namespace Indice.IdentityServer.EntityFramework.Storage.Mappers
 {
     class AllowedSigningAlgorithmsConverter :
         IValueConverter<ICollection<string>, string>,

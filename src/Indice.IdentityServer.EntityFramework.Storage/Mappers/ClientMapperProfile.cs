@@ -8,7 +8,7 @@ using AutoMapper;
 using IS4Models = IdentityServer4.Models;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Mappers
+namespace Indice.IdentityServer.EntityFramework.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for clients.

@@ -6,11 +6,11 @@ using IdentityServer4.EntityFramework.Interfaces;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
-using Indice.IdentityServer4.EntityFramework.Storage.Mappers;
+using Indice.IdentityServer.EntityFramework.Storage.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Stores
+namespace Indice.IdentityServer.EntityFramework.Storage.Stores
 {
     /// <summary>
     /// Implementation of IClientStore thats uses EF.

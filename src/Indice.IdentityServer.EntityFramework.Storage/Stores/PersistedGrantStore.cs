@@ -3,7 +3,7 @@
 
 
 using IdentityServer4.EntityFramework.Interfaces;
-using Indice.IdentityServer4.EntityFramework.Storage.Mappers;
+using Indice.IdentityServer.EntityFramework.Storage.Mappers;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
 using IdentityServer4.Extensions;
@@ -11,7 +11,7 @@ using IS4Entities = IdentityServer4.EntityFramework.Entities;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Stores
+namespace Indice.IdentityServer.EntityFramework.Storage.Stores
 {
     /// <summary>
     /// Implementation of IPersistedGrantStore thats uses EF.

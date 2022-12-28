@@ -3,13 +3,13 @@
 
 
 using IdentityServer4.EntityFramework.Interfaces;
-using Indice.IdentityServer4.EntityFramework.Storage.Mappers;
+using Indice.IdentityServer.EntityFramework.Storage.Mappers;
 using IdentityServer4.Models;
 using IdentityServer4.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Indice.IdentityServer4.EntityFramework.Storage.Stores
+namespace Indice.IdentityServer.EntityFramework.Storage.Stores
 {
     /// <summary>
     /// Implementation of IResourceStore thats uses EF.
