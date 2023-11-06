@@ -6,21 +6,20 @@ using AutoMapper;
 using IS4Models = IdentityServer4.Models;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
 
-namespace Indice.IdentityServer.EntityFramework.Storage.Mappers
+namespace Indice.IdentityServer.EntityFramework.Storage.Mappers;
+
+/// <summary>
+/// Defines entity/model mapping for persisted grants.
+/// </summary>
+/// <seealso cref="AutoMapper.Profile" />
+public class PersistedGrantMapperProfile : Profile
 {
     /// <summary>
-    /// Defines entity/model mapping for persisted grants.
+    /// <see cref="PersistedGrantMapperProfile">
+    /// </see>
     /// </summary>
-    /// <seealso cref="AutoMapper.Profile" />
-    public class PersistedGrantMapperProfile : Profile
-    {
-        /// <summary>
-        /// <see cref="PersistedGrantMapperProfile">
-        /// </see>
-        /// </summary>
-        public PersistedGrantMapperProfile() {
-            CreateMap<IS4Entities.PersistedGrant, IS4Models.PersistedGrant>(MemberList.Destination)
-                .ReverseMap();
-        }
+    public PersistedGrantMapperProfile() {
+        CreateMap<IS4Entities.PersistedGrant, IS4Models.PersistedGrant>(MemberList.Destination)
+            .ReverseMap();
     }
 }

@@ -1,20 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <PackageId>Indice.IdentityServer4</PackageId>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Indice.IdentityServer4.EntityFramework</PackageId>
   </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0">
       <NoWarn>NU1608</NoWarn>
     </PackageReference>
     <PackageReference Include="IdentityServer4" Version="4.1.2" />
-    <PackageReference Include="Indice.IdentityServer4.EntityFramework" Version="$(VersionPrefix)" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.2" />
     <PackageReference Include="Indice.IdentityServer4.EntityFramework.Storage" Version="$(VersionPrefix)" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.0" />
-    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.15.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Indice.IdentityServer.EntityFramework\Indice.IdentityServer.EntityFramework.csproj" />
     <ProjectReference Include="..\Indice.IdentityServer.EntityFramework.Storage\Indice.IdentityServer.EntityFramework.Storage.csproj" />
   </ItemGroup>
 </Project>
