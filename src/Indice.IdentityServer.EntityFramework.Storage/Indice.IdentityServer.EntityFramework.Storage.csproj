@@ -1,10 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>Indice.IdentityServer4.EntityFramework.Storage</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0">
       <NoWarn>NU1608</NoWarn>
@@ -13,9 +11,4 @@
     <PackageReference Include="IdentityModel" Version="6.0.0" />
     <PackageReference Include="IdentityServer4.EntityFramework.Storage" Version="4.1.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-  </ItemGroup>
-
 </Project>

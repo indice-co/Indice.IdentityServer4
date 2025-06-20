@@ -19,7 +19,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Indice.IdentityServer.EntityFramework.Storage\Indice.IdentityServer.EntityFramework.Storage.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-  </ItemGroup>
 </Project>
