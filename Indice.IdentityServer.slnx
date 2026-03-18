@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="LICENSE" />
+    <File Path="pack.ps1" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Indice.IdentityServer.EntityFramework.Storage/Indice.IdentityServer.EntityFramework.Storage.csproj" />
+    <Project Path="src/Indice.IdentityServer.EntityFramework/Indice.IdentityServer.EntityFramework.csproj" />
+    <Project Path="src/Indice.IdentityServer/Indice.IdentityServer.csproj" />
+  </Folder>
+</Solution>
