@@ -1,10 +1,10 @@
 <Project>
     <PropertyGroup Label="Assembly Common">
       <Copyright>Copyright (c) 2022 Indice</Copyright>
-      <TargetFramework>net7.0;</TargetFramework>
-      <VersionPrefix>4.1.7</VersionPrefix>
+      <TargetFramework>net8.0</TargetFramework>
+      <VersionPrefix>4.1.8</VersionPrefix>
       <!--<VersionSuffix>beta-01</VersionSuffix>-->
-      <Authors>Constantinos Leftheris, Georgios Manoltzas</Authors>
+      <Authors>Constantinos Leftheris</Authors>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
       <LangVersion>Latest</LangVersion>
       <ImplicitUsings>enable</ImplicitUsings>

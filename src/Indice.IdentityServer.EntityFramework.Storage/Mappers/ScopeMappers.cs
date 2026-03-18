@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
-using IS4Models = IdentityServer4.Models;
+using Microsoft.Extensions.Logging.Abstractions;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
+using IS4Models = IdentityServer4.Models;
 
 namespace Indice.IdentityServer.EntityFramework.Storage.Mappers;
 
@@ -14,7 +15,7 @@ namespace Indice.IdentityServer.EntityFramework.Storage.Mappers;
 public static class ScopeMappers
 {
     static ScopeMappers() {
-        Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ScopeMapperProfile>())
+        Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ScopeMapperProfile>(), new NullLoggerFactory())
             .CreateMapper();
     }
 

@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
-using IS4Models = IdentityServer4.Models;
+using Microsoft.Extensions.Logging.Abstractions;
 using IS4Entities = IdentityServer4.EntityFramework.Entities;
+using IS4Models = IdentityServer4.Models;
 
 namespace Indice.IdentityServer.EntityFramework.Storage.Mappers;
 
@@ -14,7 +15,7 @@ namespace Indice.IdentityServer.EntityFramework.Storage.Mappers;
 public static class ApiResourceMappers
 {
     static ApiResourceMappers() {
-        Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ApiResourceMapperProfile>())
+        Mapper = new MapperConfiguration(cfg => cfg.AddProfile<ApiResourceMapperProfile>(), new NullLoggerFactory())
             .CreateMapper();
     }
 
