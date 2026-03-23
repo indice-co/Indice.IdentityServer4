@@ -19,6 +19,7 @@ public static class IndiceIdentityServer4BuilderExtensions
     public static IIdentityServerBuilder AddDotnet7CompatibleStores(this IIdentityServerBuilder builder) {
         builder.AddClientStore<Indice.IdentityServer.EntityFramework.Storage.Stores.ClientStore>();
         builder.AddResourceStore<Indice.IdentityServer.EntityFramework.Storage.Stores.ResourceStore>();
+        builder.AddPersistedGrantStore<Indice.IdentityServer.EntityFramework.Storage.Stores.PersistedGrantStore>();
         var cleanup = builder.Services.Where(x => x.ImplementationType == typeof(TokenCleanupHost)).FirstOrDefault();
         if (cleanup is not null) {
             builder.Services.Remove(cleanup);
